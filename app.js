@@ -13,7 +13,10 @@ var contact = require('./routes/contact');
 
 var app = express();
 
-app.locals.title = 'Business Casual - Start Bootstrap Theme';
+app.locals.title = 'Eastern Regional Library';
+app.locals.resource = {
+  year: new Date().getFullYear()
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
